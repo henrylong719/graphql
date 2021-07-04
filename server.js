@@ -136,7 +136,6 @@ const RootMutationType = new GraphQLObjectType({
       },
       resolve: (parent, args) => {
         const authorIdx = authors.findIndex((author) => author.id === args.id);
-
         authors.splice(authorIdx, 1);
       },
     },
